@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Website{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'flightbooking:flight_booking' %}">Book Flight</a></li>
+            <li><a href="{% url 'flightbooking:add_flight' %}">Add Flight</a></li>
+            <li><a href="{% url 'flightbooking:search_flights' %}">Search Flights</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
